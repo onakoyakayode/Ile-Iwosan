@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="Ile iwosan.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Playfair+Display+SC:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Philosopher:wght@700&display=swap" rel="stylesheet">
+<title>Ile-Iwosan</title>
+  </head>
+  <body>
+    <section>
+        <header class="contain">
+            <nav class="Navbar">
+                <div class="Logo">
+                    <h2>Ile-Iwosan</h2>
+                </div>
+                <div id="navMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="Navigation" class="Navlist">
+                    <ul class="list">
+                        <li><a id="active" href="#">Home</a></li>
+                        <li><a href="#section21">About Us</a></li>
+                        <li><a href="#section4">Our Partner Hospitals</a></li>
+                        <li><a href="#section32">Med On Demands</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="section1">
+                <h1 id="eka">Ekabo si<br><span>Ile-Iwosan</span></h1>
+                <p>Facilitating people in getting faster, affordable, accessible and high quality medical treatment within the state.</p>
+            </div>
+
+            <div>
+                <button type="button" class="btn btn-primary" id="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Book an Appointment Today
+                </button>
+                  
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">To Book an Appointment</h5>
+                                <h6>Kindly fill the form below to get your Convenient Appointment Date & Time.</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="details">
+                                        <div class="namedetails">
+                                            <label for="FullName">Full Name<span class="asteriks">*</span></label>
+                                            <input type="text" id="FullName" placeholder="Enter Full Name">
+                                        </div>
+                                        <div class="phonedetails">
+                                            <label for="Phone Number">Phone No<span class="asteriks">*</span></label>
+                                            <input type="tel" id="Phone-Number" placeholder="Enter Phone number">
+                                        </div>
+
+                                        <div class="email-address">
+                                            <label for="email-address">Email Address<span class="asteriks">*</span></label>
+                                            <input type="email" id="email-address" placeholder="Enter E-mail Address">
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="hospital">
+                                        <div class="hospital-location">
+                                            <label for="Hospitals">Select Preferred Hospital<span class="asteriks">*</span></label>
+                                            <input type="text" list="my-list" class="my-list" placeholder="Choose Hospital, where you have your card!">
+                                            <datalist id="my-list">
+                                                <option value="Agege General Hospital" />
+                                                <option value="Ajeromi General Hospital" />
+                                                <option value="Alimosoho General Hospital" />
+                                                <option value="Badagry General Hospital" />
+                                                <option value="Gbagada General Hospital" />
+                                                <option value="Ibeju/Lekki General Hospital" />
+                                                <option value="Lagos State Teaching Hospital, Ikeja" />
+                                                <option value="Ikorodu General Hospital" />
+                                                <option value="Isolo General Hospital" />
+                                                <option value="Ifako/Ijaiye General Hospital" />
+                                                <option value="Lagos Mainland General Hospital" />
+                                                <option value="Lagos Island General Hospital" />
+                                                <option value="Somolu General Hospital" />
+                                                <option value="Surulere General Hospital" />
+                                                <option value="Lagos Island Maternity Hospital" />
+                                                <option value="Reddington Hopsital, Ikeja" />
+                                                <option value="Reddington Hopsital, Lekki" />
+                                                <option value="Reddington Hopsital, Maryland" />
+                                            </datalist>
+                                        </div>
+
+                                        <div class="card-details">
+                                            <label for="cardNUmber">Card No<span class="asteriks">*</span></label>
+                                            <input type="number" id="card-Number" placeholder="01234">
+                                        </div>
+
+                                        <div class="date-preference">
+                                            <label for="date">Select Preferred Date<span class="asteriks">*</span></label>
+                                            <input type="date" id="date" name="pickDate" min="2021-10-20" max="2021-11-20">
+                                        </div>
+
+                                        <div class="time-preference">
+                                            <label for="time">Select a Preferred Time<span class="asteriks">*</span></label>
+                                            <input type="time" name="time" id="time" min="09:00" max="17:00" required>
+                                            <small>Office hours are 9am to 5pm</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="message-preference">
+                                        <label for="message">Message<span class="asteriks">*</span></label>
+                                        <textarea id="message-preference">Please, Enter a very detailed message!!!</textarea>
+                                    </div>
+                                </form>
+                                <div>
+                                    <span class="asteriks">*</span><small>By clicking the submit Button, You have agreed to the <a class="termscondition" href="#">Terms & Conditions</a> of Ile-Iwosan Policy.</small>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary" id="submit-button1">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <div class="section2">
+        <div class="section21 contain">
+            <div>
+                <h2>THE BETTER WAY TO GO FOR MEDICAL TREATMENT</h2>
+            </div>
+            <div>
+                <ul class="listed">
+                    <li>Only the best hospitals in the International Network to choose from.</li>
+                    <li>Only the best service to ensure you get the best treatment.</li>
+                    <li>Only the best choice for the latest technology, world leading specialists and advanced medical treatment.</li>
+                    <li>Only the best medical treatment treatment – suitable for every budget.</li>
+                </ul>
+            </div>
+            <div class="button1">
+                <button type="button" class="btn btn-primary" id="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Book an Appointment
+                </button>
+                  
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">To Book an Appointment</h5>
+                                <h6>Kindly fill the form below to get your Convenient Appointment Date & Time.</h6>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="details">
+                                        <div class="namedetails">
+                                            <label for="FullName">Full Name<span class="asteriks">*</span></label>
+                                            <input type="text" id="FullName" placeholder="Enter Full Name">
+                                        </div>
+                                        <div class="phonedetails">
+                                            <label for="Phone Number">Phone No<span class="asteriks">*</span></label>
+                                            <input type="tel" id="Phone-Number" placeholder="Enter Phone number">
+                                        </div>
+
+                                        <div class="email-address">
+                                            <label for="email-address">Email Address<span class="asteriks">*</span></label>
+                                            <input type="email" id="email-address" placeholder="Enter E-mail Address">
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="hospital">
+                                        <div class="hospital-location">
+                                            <label for="Hospitals">Select Preferred Hospital<span class="asteriks">*</span></label>
+                                            <input type="text" list="my-list" class="my-list" placeholder="Choose Hospital, where you have your card!">
+                                            <datalist id="my-list">
+                                                <option value="Agege General Hospital" />
+                                                <option value="Ajeromi General Hospital" />
+                                                <option value="Alimosoho General Hospital" />
+                                                <option value="Badagry General Hospital" />
+                                                <option value="Gbagada General Hospital" />
+                                                <option value="Ibeju/Lekki General Hospital" />
+                                                <option value="Lagos State Teaching Hospital, Ikeja" />
+                                                <option value="Ikorodu General Hospital" />
+                                                <option value="Isolo General Hospital" />
+                                                <option value="Ifako/Ijaiye General Hospital" />
+                                                <option value="Lagos Mainland General Hospital" />
+                                                <option value="Lagos Island General Hospital" />
+                                                <option value="Somolu General Hospital" />
+                                                <option value="Surulere General Hospital" />
+                                                <option value="Lagos Island Maternity Hospital" />
+                                                <option value="Reddington Hopsital, Ikeja" />
+                                                <option value="Reddington Hopsital, Lekki" />
+                                                <option value="Reddington Hopsital, Maryland" />
+                                            </datalist>
+                                        </div>
+
+                                        <div class="card-details">
+                                            <label for="cardNUmber">Card No<span class="asteriks">*</span></label>
+                                            <input type="number" id="card-Number" placeholder="0045">
+                                        </div>
+
+                                        <div class="date-preference">
+                                            <label for="date">Select Preferred Date<span class="asteriks">*</span></label>
+                                            <input type="date" id="date" name="pickDate" min="2021-10-20" max="2021-11-20">
+                                        </div>
+
+                                        <div class="time-preference">
+                                            <label for="time">Select a Preferred Time<span class="asteriks">*</span></label>
+                                            <input type="time" name="time" id="time" min="09:00" max="17:00" required>
+                                            <small>Office hours are 9am to 5pm</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="message-preference">
+                                        <label for="message">Message<span class="asteriks">*</span></label>
+                                        <textarea id="message-preference">Please, Enter a very detailed message!!!</textarea>
+                                    </div>
+                                </form>
+                                <div>
+                                    <span class="asteriks">*</span><small>By clicking the submit Button, You have agreed to the <a class="termscondition" href="#">Terms & Conditions</a> of Ile-Iwosan Policy.</small>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary" id="submit-button1">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section21 contain" id="section21">
+            <div class="section211">
+                <h2>WHO ARE WE?</h2>
+                <p>Ile-Iwosan is a leading Medical Treatment and Med-on-Demand facilitator for patients from all over the country (10+ so far) to get medical services and treatment hassle free. Welcome to better Ile-Iwosan.</p>
+                <p>Ile-Iwosan has adopted a holistic approach to simplify the entire process for our clients by partnering with world class hospitals that offer high quality affordable and accessible medical treatment, and providing exceptional customer service, holistic support, discretion and urgency.</p>
+                
+            </div>
+            
+        </div>
+
+        <div class="section3 contain">
+            <div class="section31">
+                <h2>SERVICES OFFERED THROUGH ILE-IWOSAN</h2>
+            </div>
+
+            <div class="section32" id="section32">
+                <div class="section320">
+                    <h3>In-Person Services</h3>
+                    <p>For patients travelling or wanting to travel from another state that is not listed above to any of our partner hospitals for Medical Treatment or a checkup.</p>
+                    <div class="section321">
+                        <div class="section3200">
+                            <img class="doctor" src="doctor.png" width="65px" height="65px">
+                            <p>Book an in-person appointment or a health checkup easily & quickly at any of our partner hospitals.</p>
+                            <a class="Bk1" type="button" href="#">BOOK AN INPERSON CONSULTAION NOW</a>
+                        </div>
+                        <div class="section3201">
+                            <img class="appointment" src="appointment.png" width="65px" height="65px">
+                            <p>Wanting to travel to any of our partner hospitals but want to plan better? Get a free treatment plan and know the estimated cost of your treatment.</p>
+                            <a class="Bk2" type="button" href="#">Get a free treatment plan & costing now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section322">
+                    <h3>Remote Med-on-Demand</h3>
+                    <p>For patients wanting to speak with or get medical advice from a leading specialist in our partner hospitals in Lagos State from their home, without travelling.</p>
+                    <div class="section323">
+                        <div class="section3200">
+                            <img class="consult" src="consulting.png" width="65px" height="65px">
+                            <p>Book an Online Telemedicine Consultation with a leading specialist at any of our partner Hospitals.</p>
+                            <a class="Bk3" type="button" href="#">Book an online telemed Consultation now</a>
+                        </div>
+                        <div class="section3201">
+                            <img class="health" src="health-check.png" width="65px" height="65px">
+                            <p>Wanting to get your medical case reviewed by a leading specialist at our partner hospitals. Get a Detailed Case Review & Second Medical Opinion.</p>
+                            <a class="Bk4" type="button" href="#">Get a detailed case Review & second Opinion</a>
+                        </div>
+                    </div>
+                </div>
+
+            
+            </div>
+
+            <div class="section4" id="section4">
+                <div>
+                    <h3>OUR PARTNER HOSPITALS</h3>
+                    <p>Ile-Iwosan has partnered with these leading world class hospitals that offer high quality affordable and accessible medical treatment hassle free, click to learn more:</p>
+                </div>
+                
+                <ul class="hospital-list">
+                    <li><a href="#">Lagos state teaching Hospital</a>- Ikeja, Lagos.</li>
+                    <li><a href="#">Gbagada General Hospital</a>- Gbagada, Lagos.</li>
+                    <li><a href="#">Ikorodu General Hospital</a>- Ikorodu, Lagos.</li>
+                    <li><a href="#">Lagos Island General Hospital</a>- Lagos-Island, Lagos.</li>
+                    <li><a href="#">Reddington Hospital</a>- Lekki, Lagos.</li>
+                    <li><a href="#">Rumple Hospital</a>- Ibadan, Oyo.</li>
+                    <li><a href="#">Reddington Hospital</a>- Ibadan, Oyo.</li>
+                    <li><a href="#">Aspire Care</a>- Abeokuta, Ogun.</li>
+                    <li><a href="#">The more care</a>- Shagamu, Ogun.</li>
+                </ul>
+
+            </div>
+
+            <div class="section5">
+                <div>
+                    <h3>WHAT ARE THE STEPS?</h3>
+                </div>
+
+                <div class="section50">
+                    <div class="section501">
+                        <li>
+                            <a class="section502" href="#"><i class="fas fa-home" style="color: #162b32;"></i>STEPS FOR IN-PERSON SERVICES</a>
+                        </li>
+                        <li>
+                            <a class="section503" href="#"><i class="fas fa-laptop" style="color: #162b32;"></i>STEPS FOR REMOTE MED-ON-DEMAND SERVICES</a>
+                        </li>
+                    </div>
+
+                    <div class="section5010">
+                        <p><span><strong>STEP ONE: CONTACT US</strong></span></p>
+                        <p> Click on the “Book an In-person Appointment/ Check-up Now” and fill in a brief form with your preferred hospital, date and time and the type of specialist you would like to consult with or contact us via WhatsApp.</p>
+
+                        <p><span><strong>STEP TWO: INITIAL CONTACT</strong></span></p>
+                        <p>An ILE-IWOSAN Case Manager will get back to you to collect any available medical records related to the condition. The specialists at our partner hospitals use these to form a second opinion, come up with accurate treatment options and costs for treatment.</p>
+
+                        <p><span><strong>STEP THREE: PLANNING</strong></span></p>
+                        <p>An ILE-IWOSAN client coordinator then takes the client through the medical treatment options provide by the specialist, fees and costs for accommodation to help the client to make an informed decision.</p>
+
+                        <p><span><strong>STEP FOUR: TREATMENT</strong></span></p>
+                        <p>Once a client has confirmed they want to proceed with the treatment, a client coordinator makes all the arrangements: books the treatment with our partner hospital, books suitable accommodation close to the hospital.</p>
+                        <p>We also go that extra step to ensure that our client has a trouble-free trip by staying in communication throughout the treatment and helping to resolve any thing that may come up.</p>
+
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    <div class="section6">
+        <h2>Patient Testimonials</h2>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <q>My experience with ILE-IWOSAN was simply fantastic. They provided me with ALL the information I needed to seek medical assistance. This was my first time of going through a stress-free medical Consultation. ILE-IWOSAN is simply professional, special thanks to Doreen for your expert guidance, I got my treatment.</q>
+                <p class="author">Obayemi - Lagos - Multiple Health Checks, 2019</p>
+            </div>
+            
+            <div class="mySlides">
+                <q>Your services to us were very efficient, through and through. you linked us with the Surgeon at the Lagos State Teaching Hospital in Lagos in a record time; treatment estimates given were very good and economical; your speed of giving feedback was excellent;  follow ups were exceptional.</q>
+                <p class="author">Gertrude – Ibadan - Surgery to Remove Fibroids, 2018</p>
+            </div>
+            
+            <div class="mySlides">
+                <q>I searched for a hospital in Lagos but the appointment time are too far. ILE-IWOSAN located a hospital in lagos, Nigeria. Reddington hospital is a good place very professional and immaculate maintained…</q>
+                <p class="author">Richard – Lagos - Prostate Cancer, 2019</p>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <div class="section7">
+        <h2>Frequently Asked Questions (FAQs)</h2>
+        <div class="contain">
+            <button class="accordion">Q: How do we select our partner hospitals?</button>
+            <div class="panel">
+            <p>A: We take a multi-pronged approach to selecting the hospitals with which we partner.</p>
+            <p>At ILE-IWOSAN we pride ourselves by ensuring that you and your loved ones get world class service when seeking overseas medical treatment, that is why we ensure that we partner with only the best hospitals.</p>
+            <p>Using a Multi-level continuous model, we ensure that in the end we partner with hospitals that are high quality, accessible, affordable with exceptional customer service, best specialties in various medical fields and advanced equipment.</p>
+            <p>The model involves vigorous process of:</p>
+            <ul>
+                <li>Carrying out a comprehensive country and hospital assessment</li>
+                <li>Undertaking a communication assessment to ensure quick feedback from the hospitals</li>
+                <li>Your local doctor should not be offended because as they know that an inaccurate diagnoses can have sever consequences for patients and that it is challenging for any one doctor to know about every available option.</li>
+                <li>Having additional information about your diagnosis and treatment can only be helpful to you. It should be your right to seek a medical second opinion.</li>
+            </ul>
+            </div>
+
+            <button class="accordion">Q: How will i correspond with my treating doctor prior to my apppointment?</button>
+            <div class="panel">
+            <p>A: After you have made your decision to proceed, we will set up a virtual consultation with your treating doctor.</p>
+            <p>ILE-IWOSAN uses various technologies that helps our clients to be able to have easy access to doctors and specialists prior to appointment.</p>
+            </div>
+
+            <button class="accordion">Q: WHo do i pay for my treatment, Ile-Iwosan or the Hospital?</button>
+            <div class="panel">
+            <p>A: All payments are made directly to the Hospitals.</p>
+            </div>
+
+            <button class="accordion">Q: How does ILE-IWOSAN make revenue?</button>
+            <div class="panel">
+            <p>A: At IMT we receive a marketing commission from the treating hospital. This is the case because by us linking a patient with a hospital, the hospital has saved on coordination and marketing costs.</p>
+            <p>The patient will pay the hospital the same amount for the medical treatment if the client chooses to deal directly with the treating hospital her or himself and not use our services.</p>
+            </div>
+
+            <button class="accordion">Q: Can i use my medical insurance?</button>
+            <div class="panel">
+            <p>A: At International Medical Treatment (IMT) we understand that our clients have insurance from different providers and that insurance policies are different. Thus, we advise our clients to contact their insurance provide to see if their policy covers the cost of medical or health treatments overseas at our partner hospitals.</p>
+            </div>
+        </div>
+
+        <div class="section8 contain">
+            <h5>Click the button below to fill out a short form with your information to get treatment options from specialists at our partner hospitals today.</h5>
+            <button type="button" class="btn btn-primary" id="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Click here to get started
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">To Book an Appointment</h5>
+                            <h6>Kindly fill the form below to get your Convenient Appointment Date & Time.</h6>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="details">
+                                    <div class="namedetails">
+                                        <label for="FullName">Full Name<span class="asteriks">*</span></label>
+                                        <input type="text" id="FullName" placeholder="Enter Full Name">
+                                    </div>
+                                    <div class="phonedetails">
+                                        <label for="Phone Number">Phone No<span class="asteriks">*</span></label>
+                                        <input type="tel" id="Phone-Number" placeholder="Enter Phone number">
+                                    </div>
+
+                                    <div class="email-address">
+                                        <label for="email-address">Email Address<span class="asteriks">*</span></label>
+                                        <input type="email" id="email-address" placeholder="Enter E-mail Address">
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="hospital">
+                                    <div class="hospital-location">
+                                        <label for="Hospitals">Select Preferred Hospital<span class="asteriks">*</span></label>
+                                        <input type="text" list="my-list" class="my-list" placeholder="Choose Hospital, where you have your card!">
+                                        <datalist id="my-list">
+                                            <option value="Agege General Hospital" />
+                                            <option value="Ajeromi General Hospital" />
+                                            <option value="Alimosoho General Hospital" />
+                                            <option value="Badagry General Hospital" />
+                                            <option value="Gbagada General Hospital" />
+                                            <option value="Ibeju/Lekki General Hospital" />
+                                            <option value="Lagos State Teaching Hospital, Ikeja" />
+                                            <option value="Ikorodu General Hospital" />
+                                            <option value="Isolo General Hospital" />
+                                            <option value="Ifako/Ijaiye General Hospital" />
+                                            <option value="Lagos Mainland General Hospital" />
+                                            <option value="Lagos Island General Hospital" />
+                                            <option value="Somolu General Hospital" />
+                                            <option value="Surulere General Hospital" />
+                                            <option value="Lagos Island Maternity Hospital" />
+                                            <option value="Reddington Hopsital, Ikeja" />
+                                            <option value="Reddington Hopsital, Lekki" />
+                                            <option value="Reddington Hopsital, Maryland" />
+                                        </datalist>
+                                    </div>
+
+                                    <div class="card-details">
+                                        <label for="cardNUmber">Card No<span class="asteriks">*</span></label>
+                                        <input type="number" id="card-Number" placeholder="01234">
+                                    </div>
+
+                                    <div class="date-preference">
+                                        <label for="date">Select Preferred Date<span class="asteriks">*</span></label>
+                                        <input type="date" id="date" name="pickDate" min="2021-10-20" max="2021-11-20">
+                                    </div>
+
+                                    <div class="time-preference">
+                                        <label for="time">Select a Preferred Time<span class="asteriks">*</span></label>
+                                        <input type="time" name="time" id="time" min="09:00" max="17:00" required>
+                                        <small>Office hours are 9am to 5pm</small>
+                                    </div>
+                                </div>
+
+                                <div class="message-preference">
+                                    <label for="message">Message<span class="asteriks">*</span></label>
+                                    <textarea id="message-preference">Please, Enter a very detailed message!!!</textarea>
+                                </div>
+                            </form>
+                            <div>
+                                <span class="asteriks">*</span><small>By clicking the submit Button, You have agreed to the <a class="termscondition" href="#">Terms & Conditions</a> of Ile-Iwosan Policy.</small>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary" id="submit-button1">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="foot contain">
+            <div class="name">
+                <h3>Ile<br>Iwosan</h3>
+            </div>
+            <div class="contact">
+                <h5>CONTACT-DETAILS</h5>
+                <div class="horizontal-line"></div>
+                <div id="contact">
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@ile-iwosan.com">info@ile-iwosan.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+2348090919293">+234-8090919293</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="tel:">+234-8090919293</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="office">
+                <h5>COORDINATION OFFICE</h5>
+                <div class="horizontal-line"></div>
+                <address>
+                    <i class="fas fa-map-marker-alt"></i>
+                    Mirage Towers, Office 8, 1st Floor, Tower 2, Chiromo, Westlands, Ikeja, Lagos
+                </address>
+            </div>
+
+            <div class="location">
+                <h5>HOSPITAL LOCATIONS</h5>
+                <div class="horizontal-line"></div>
+                <ul>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Ikeja, Lagos state
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Lekki, Lagos state
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Victoria-island, Lagos state
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Gbagada, Lagos state
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Sagamu, Ogun state
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Abeokuta, Ogun state
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Ibadan, Oyo state
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Akure, Ondo state
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Oshogbo, Osun state
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Ado-Ekiti, Ekiti state
+                    </li>
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="page">
+        <h6 class="copy">ILE-IWOSAN &COPY; 2021, COPYRIGHT RESERVED.</h6>
+        <h5>Developed by <a class="dev" href="#">Onakoya Kayode</a></h5>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="Ile iwosan.js"></script>
+  </body>
+</html>
